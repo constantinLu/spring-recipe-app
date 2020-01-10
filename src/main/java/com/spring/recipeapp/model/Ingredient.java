@@ -12,6 +12,16 @@ import java.math.BigDecimal;
 @Entity
 public class Ingredient extends BaseEntity {
 
+    public Ingredient() {
+    }
+
+    public Ingredient(String description, BigDecimal amount, Recipe recipe, UnitofMeasure unitofMeasure) {
+        this.description = description;
+        this.amount = amount;
+        this.recipe = recipe;
+        this.unitofMeasure = unitofMeasure;
+    }
+
     @Column
     private String description;
 
@@ -26,7 +36,7 @@ public class Ingredient extends BaseEntity {
     private Recipe recipe;
 
     // its already by default as eager (but just showing how it can be done)
-    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.DETACH)
+    @OneToOne(fetch = FetchType.EAGER)
     private UnitofMeasure unitofMeasure;
 
 

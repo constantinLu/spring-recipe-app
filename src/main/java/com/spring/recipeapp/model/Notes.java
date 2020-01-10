@@ -14,7 +14,6 @@ public class Notes extends BaseEntity {
     //more than 255 chars.
     private String notes;
 
-    @Column
     @OneToOne
     //no cascade here (if we delete the notes , do not delete the recipe)
     private Recipe recipe;
