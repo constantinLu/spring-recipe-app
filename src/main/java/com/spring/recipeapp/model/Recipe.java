@@ -16,6 +16,7 @@ import javax.persistence.OneToOne;
 import java.util.HashSet;
 import java.util.Set;
 
+
 @Data
 @EqualsAndHashCode(exclude = {"recipe"})
 @Entity
