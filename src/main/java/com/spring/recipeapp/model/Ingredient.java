@@ -1,7 +1,9 @@
 package com.spring.recipeapp.model;
 
 
-import javax.persistence.CascadeType;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -9,6 +11,8 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import java.math.BigDecimal;
 
+@Data
+@EqualsAndHashCode(exclude = {"recipe"})
 @Entity
 public class Ingredient extends BaseEntity {
 
@@ -38,31 +42,6 @@ public class Ingredient extends BaseEntity {
     // its already by default as eager (but just showing how it can be done)
     @OneToOne(fetch = FetchType.EAGER)
     private UnitofMeasure unitofMeasure;
-
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public BigDecimal getAmount() {
-        return amount;
-    }
-
-    public void setAmount(BigDecimal amount) {
-        this.amount = amount;
-    }
-
-    public Recipe getRecipe() {
-        return recipe;
-    }
-
-    public void setRecipe(Recipe recipe) {
-        this.recipe = recipe;
-    }
 
 
 }
