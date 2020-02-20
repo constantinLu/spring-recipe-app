@@ -1,7 +1,7 @@
 package gizet.springframework.controllers;
 
 import gizet.springframework.commands.RecipeCommand;
-import gizet.springframework.services.RecipeService;
+import gizet.springframework.services.contract.RecipeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

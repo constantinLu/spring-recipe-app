@@ -1,4 +1,4 @@
-package gizet.springframework.services;
+package gizet.springframework.services.contract;
 
 import gizet.springframework.commands.RecipeCommand;
 import gizet.springframework.domain.Recipe;

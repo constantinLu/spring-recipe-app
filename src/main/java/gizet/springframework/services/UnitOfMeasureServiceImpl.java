@@ -3,6 +3,7 @@ package gizet.springframework.services;
 import gizet.springframework.commands.UnitOfMeasureCommand;
 import gizet.springframework.converters.UnitOfMeasureToUnitOfMeasureCommand;
 import gizet.springframework.repositories.UnitOfMeasureRepository;
+import gizet.springframework.services.contract.UnitOfMeasureService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;

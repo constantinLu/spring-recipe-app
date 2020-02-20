@@ -3,7 +3,7 @@ package gizet.springframework.recipeapp.controllers;
 import gizet.springframework.commands.RecipeCommand;
 import gizet.springframework.controllers.RecipeController;
 import gizet.springframework.domain.Recipe;
-import gizet.springframework.services.RecipeService;
+import gizet.springframework.services.contract.RecipeService;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;

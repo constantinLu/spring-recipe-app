@@ -1,4 +1,4 @@
-package gizet.springframework.services;
+package gizet.springframework.services.contract;
 
 import gizet.springframework.commands.IngredientCommand;
 
@@ -8,4 +8,6 @@ import gizet.springframework.commands.IngredientCommand;
 public interface IngredientService {
 
     IngredientCommand findByRecipeIdAndIngredientId(Long recipeId, Long ingredientId);
+
+    IngredientCommand saveIngredientCommand(IngredientCommand ingredientCommand);
 }

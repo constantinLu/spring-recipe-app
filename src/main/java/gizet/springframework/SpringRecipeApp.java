@@ -5,9 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
-public class SpringRecipeApplication {
+public class SpringRecipeApp {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringRecipeApplication.class, args);
+		SpringApplication.run(SpringRecipeApp.class, args);
 	}
 }

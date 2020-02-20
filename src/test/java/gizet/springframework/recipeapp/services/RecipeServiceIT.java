@@ -5,7 +5,7 @@ import gizet.springframework.converters.RecipeCommandToRecipe;
 import gizet.springframework.converters.RecipeToRecipeCommand;
 import gizet.springframework.domain.Recipe;
 import gizet.springframework.repositories.RecipeRepository;
-import gizet.springframework.services.RecipeService;
+import gizet.springframework.services.contract.RecipeService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

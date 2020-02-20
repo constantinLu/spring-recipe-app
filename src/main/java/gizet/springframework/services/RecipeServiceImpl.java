@@ -5,6 +5,7 @@ import gizet.springframework.converters.RecipeCommandToRecipe;
 import gizet.springframework.converters.RecipeToRecipeCommand;
 import gizet.springframework.domain.Recipe;
 import gizet.springframework.repositories.RecipeRepository;
+import gizet.springframework.services.contract.RecipeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
